@@ -5,6 +5,8 @@ let prev_index = 0;
 let dots = document.querySelectorAll(".dot");
 show_image(prev_index);
 
+window.setInterval(move_carousel, 5000);
+
 
 function show_image(current_index)
 {
@@ -20,13 +22,20 @@ function show_image(current_index)
     dots[current_index].style.backgroundColor = "#717171";
     
     prev_index = current_index;
+    
 }
 
 function move_carousel(e)
 {   
+    if(!e) 
+    {
+        show_image(prev_index+1);
+        return;
+    }
     let dirn = e.target.id;
     let next_index = prev_index + Number(dirn);
     show_image(next_index);
+   
 
 }
 let left_button = document.querySelector(".left");
