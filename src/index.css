@@ -1,0 +1,52 @@
+* 
+{
+    box-sizing: border-box;
+}
+.container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.wide_div {
+    width: 1000px;
+    position: relative;
+}
+
+.frame, img {
+    width:500px;
+    height: 500px;
+}
+
+.image {
+    display: none;
+}
+
+button {
+    position: relative;
+}
+
+.left, .right {
+    bottom: 50%;
+}
+
+.right {
+    left: 88.5%;
+}   
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dots {
+    position: relative;
+    bottom:3%;
+    left: 41%;
+}
